@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>18511FAF-862B-423C-9E5B-49ECA2E7E19C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyCrazyPet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>972AEC84-8318-4E12-B7C5-8B9690712D5D</key>
+		<string>https://github.com/KBryan/MyCrazyPet.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyCrazyPet.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>972AEC84-8318-4E12-B7C5-8B9690712D5D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/KBryan/MyCrazyPet.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>972AEC84-8318-4E12-B7C5-8B9690712D5D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>972AEC84-8318-4E12-B7C5-8B9690712D5D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyCrazyPet</string>
+		</dict>
+	</array>
+</dict>
+</plist>

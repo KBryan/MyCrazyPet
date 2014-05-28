@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9FCD6F71934134E00086B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD6F61934134E00086B86 /* Foundation.framework */; };
+		A9FCD6F91934134E00086B86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD6F81934134E00086B86 /* CoreGraphics.framework */; };
+		A9FCD6FB1934134E00086B86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD6FA1934134E00086B86 /* UIKit.framework */; };
+		A9FCD7011934134E00086B86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9FCD6FF1934134E00086B86 /* InfoPlist.strings */; };
+		A9FCD7031934134E00086B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FCD7021934134E00086B86 /* main.m */; };
+		A9FCD7071934134E00086B86 /* EIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FCD7061934134E00086B86 /* EIAppDelegate.m */; };
+		A9FCD7091934134E00086B86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FCD7081934134E00086B86 /* Images.xcassets */; };
+		A9FCD7101934134E00086B86 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD70F1934134E00086B86 /* XCTest.framework */; };
+		A9FCD7111934134E00086B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD6F61934134E00086B86 /* Foundation.framework */; };
+		A9FCD7121934134E00086B86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD6FA1934134E00086B86 /* UIKit.framework */; };
+		A9FCD71A1934134E00086B86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9FCD7181934134E00086B86 /* InfoPlist.strings */; };
+		A9FCD71C1934134E00086B86 /* MyCrazyPetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FCD71B1934134E00086B86 /* MyCrazyPetTests.m */; };
+		A9FCD7261934137800086B86 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FCD7251934137800086B86 /* MainStoryboard.storyboard */; };
+		A9FCD7281934161300086B86 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD7271934161300086B86 /* Parse.framework */; };
+		A9FCD72A1934165500086B86 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD7291934165500086B86 /* AudioToolbox.framework */; };
+		A9FCD72C1934165F00086B86 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD72B1934165F00086B86 /* CFNetwork.framework */; };
+		A9FCD72E1934167A00086B86 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD72D1934167A00086B86 /* CoreLocation.framework */; };
+		A9FCD7301934168700086B86 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD72F1934168700086B86 /* libz.dylib */; };
+		A9FCD7321934169200086B86 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD7311934169200086B86 /* MobileCoreServices.framework */; };
+		A9FCD734193416A300086B86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD733193416A300086B86 /* QuartzCore.framework */; };
+		A9FCD736193416AD00086B86 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD735193416AD00086B86 /* Security.framework */; };
+		A9FCD738193416C300086B86 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD737193416C300086B86 /* StoreKit.framework */; };
+		A9FCD73A193416CF00086B86 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD739193416CF00086B86 /* SystemConfiguration.framework */; };
+		A9FCD73D193419AD00086B86 /* ParseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FCD73C193419AD00086B86 /* ParseTableViewController.m */; };
+		A9FCD7401934248600086B86 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FCD73F1934248600086B86 /* HomeViewController.m */; };
+		A9FCD7431934292800086B86 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FCD7421934292800086B86 /* LoginViewController.m */; };
+		A9FCD7461934294100086B86 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FCD7451934294100086B86 /* SignUpViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9FCD7131934134E00086B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9FCD6EB1934134E00086B86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9FCD6F21934134E00086B86;
+			remoteInfo = MyCrazyPet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9FCD6F31934134E00086B86 /* MyCrazyPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCrazyPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FCD6F61934134E00086B86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9FCD6F81934134E00086B86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9FCD6FA1934134E00086B86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9FCD6FE1934134E00086B86 /* MyCrazyPet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyCrazyPet-Info.plist"; sourceTree = "<group>"; };
+		A9FCD7001934134E00086B86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9FCD7021934134E00086B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9FCD7041934134E00086B86 /* MyCrazyPet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyCrazyPet-Prefix.pch"; sourceTree = "<group>"; };
+		A9FCD7051934134E00086B86 /* EIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EIAppDelegate.h; sourceTree = "<group>"; };
+		A9FCD7061934134E00086B86 /* EIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EIAppDelegate.m; sourceTree = "<group>"; };
+		A9FCD7081934134E00086B86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9FCD70E1934134E00086B86 /* MyCrazyPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCrazyPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FCD70F1934134E00086B86 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A9FCD7171934134E00086B86 /* MyCrazyPetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyCrazyPetTests-Info.plist"; sourceTree = "<group>"; };
+		A9FCD7191934134E00086B86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9FCD71B1934134E00086B86 /* MyCrazyPetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCrazyPetTests.m; sourceTree = "<group>"; };
+		A9FCD7251934137800086B86 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A9FCD7271934161300086B86 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		A9FCD7291934165500086B86 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A9FCD72B1934165F00086B86 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A9FCD72D1934167A00086B86 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A9FCD72F1934168700086B86 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A9FCD7311934169200086B86 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A9FCD733193416A300086B86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A9FCD735193416AD00086B86 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A9FCD737193416C300086B86 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A9FCD739193416CF00086B86 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A9FCD73B193419AD00086B86 /* ParseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseTableViewController.h; sourceTree = "<group>"; };
+		A9FCD73C193419AD00086B86 /* ParseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseTableViewController.m; sourceTree = "<group>"; };
+		A9FCD73E1934248600086B86 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A9FCD73F1934248600086B86 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A9FCD7411934292800086B86 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A9FCD7421934292800086B86 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A9FCD7441934294100086B86 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		A9FCD7451934294100086B86 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9FCD6F01934134E00086B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FCD73A193416CF00086B86 /* SystemConfiguration.framework in Frameworks */,
+				A9FCD738193416C300086B86 /* StoreKit.framework in Frameworks */,
+				A9FCD736193416AD00086B86 /* Security.framework in Frameworks */,
+				A9FCD734193416A300086B86 /* QuartzCore.framework in Frameworks */,
+				A9FCD7321934169200086B86 /* MobileCoreServices.framework in Frameworks */,
+				A9FCD7301934168700086B86 /* libz.dylib in Frameworks */,
+				A9FCD72E1934167A00086B86 /* CoreLocation.framework in Frameworks */,
+				A9FCD6F91934134E00086B86 /* CoreGraphics.framework in Frameworks */,
+				A9FCD72C1934165F00086B86 /* CFNetwork.framework in Frameworks */,
+				A9FCD72A1934165500086B86 /* AudioToolbox.framework in Frameworks */,
+				A9FCD6FB1934134E00086B86 /* UIKit.framework in Frameworks */,
+				A9FCD7281934161300086B86 /* Parse.framework in Frameworks */,
+				A9FCD6F71934134E00086B86 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FCD70B1934134E00086B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FCD7101934134E00086B86 /* XCTest.framework in Frameworks */,
+				A9FCD7121934134E00086B86 /* UIKit.framework in Frameworks */,
+				A9FCD7111934134E00086B86 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9FCD6EA1934134E00086B86 = {
+			isa = PBXGroup;
+			children = (
+				A9FCD6FC1934134E00086B86 /* MyCrazyPet */,
+				A9FCD7151934134E00086B86 /* MyCrazyPetTests */,
+				A9FCD6F51934134E00086B86 /* Frameworks */,
+				A9FCD6F41934134E00086B86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9FCD6F41934134E00086B86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9FCD6F31934134E00086B86 /* MyCrazyPet.app */,
+				A9FCD70E1934134E00086B86 /* MyCrazyPetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9FCD6F51934134E00086B86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9FCD739193416CF00086B86 /* SystemConfiguration.framework */,
+				A9FCD737193416C300086B86 /* StoreKit.framework */,
+				A9FCD735193416AD00086B86 /* Security.framework */,
+				A9FCD733193416A300086B86 /* QuartzCore.framework */,
+				A9FCD7311934169200086B86 /* MobileCoreServices.framework */,
+				A9FCD72F1934168700086B86 /* libz.dylib */,
+				A9FCD72D1934167A00086B86 /* CoreLocation.framework */,
+				A9FCD72B1934165F00086B86 /* CFNetwork.framework */,
+				A9FCD7291934165500086B86 /* AudioToolbox.framework */,
+				A9FCD7271934161300086B86 /* Parse.framework */,
+				A9FCD6F61934134E00086B86 /* Foundation.framework */,
+				A9FCD6F81934134E00086B86 /* CoreGraphics.framework */,
+				A9FCD6FA1934134E00086B86 /* UIKit.framework */,
+				A9FCD70F1934134E00086B86 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9FCD6FC1934134E00086B86 /* MyCrazyPet */ = {
+			isa = PBXGroup;
+			children = (
+				A9FCD7051934134E00086B86 /* EIAppDelegate.h */,
+				A9FCD7061934134E00086B86 /* EIAppDelegate.m */,
+				A9FCD73B193419AD00086B86 /* ParseTableViewController.h */,
+				A9FCD73C193419AD00086B86 /* ParseTableViewController.m */,
+				A9FCD73E1934248600086B86 /* HomeViewController.h */,
+				A9FCD73F1934248600086B86 /* HomeViewController.m */,
+				A9FCD7251934137800086B86 /* MainStoryboard.storyboard */,
+				A9FCD7411934292800086B86 /* LoginViewController.h */,
+				A9FCD7421934292800086B86 /* LoginViewController.m */,
+				A9FCD7441934294100086B86 /* SignUpViewController.h */,
+				A9FCD7451934294100086B86 /* SignUpViewController.m */,
+				A9FCD7081934134E00086B86 /* Images.xcassets */,
+				A9FCD6FD1934134E00086B86 /* Supporting Files */,
+			);
+			path = MyCrazyPet;
+			sourceTree = "<group>";
+		};
+		A9FCD6FD1934134E00086B86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9FCD6FE1934134E00086B86 /* MyCrazyPet-Info.plist */,
+				A9FCD6FF1934134E00086B86 /* InfoPlist.strings */,
+				A9FCD7021934134E00086B86 /* main.m */,
+				A9FCD7041934134E00086B86 /* MyCrazyPet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9FCD7151934134E00086B86 /* MyCrazyPetTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9FCD71B1934134E00086B86 /* MyCrazyPetTests.m */,
+				A9FCD7161934134E00086B86 /* Supporting Files */,
+			);
+			path = MyCrazyPetTests;
+			sourceTree = "<group>";
+		};
+		A9FCD7161934134E00086B86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9FCD7171934134E00086B86 /* MyCrazyPetTests-Info.plist */,
+				A9FCD7181934134E00086B86 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9FCD6F21934134E00086B86 /* MyCrazyPet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FCD71F1934134E00086B86 /* Build configuration list for PBXNativeTarget "MyCrazyPet" */;
+			buildPhases = (
+				A9FCD6EF1934134E00086B86 /* Sources */,
+				A9FCD6F01934134E00086B86 /* Frameworks */,
+				A9FCD6F11934134E00086B86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCrazyPet;
+			productName = MyCrazyPet;
+			productReference = A9FCD6F31934134E00086B86 /* MyCrazyPet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9FCD70D1934134E00086B86 /* MyCrazyPetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FCD7221934134E00086B86 /* Build configuration list for PBXNativeTarget "MyCrazyPetTests" */;
+			buildPhases = (
+				A9FCD70A1934134E00086B86 /* Sources */,
+				A9FCD70B1934134E00086B86 /* Frameworks */,
+				A9FCD70C1934134E00086B86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9FCD7141934134E00086B86 /* PBXTargetDependency */,
+			);
+			name = MyCrazyPetTests;
+			productName = MyCrazyPetTests;
+			productReference = A9FCD70E1934134E00086B86 /* MyCrazyPetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9FCD6EB1934134E00086B86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Kwame Bryan";
+				TargetAttributes = {
+					A9FCD70D1934134E00086B86 = {
+						TestTargetID = A9FCD6F21934134E00086B86;
+					};
+				};
+			};
+			buildConfigurationList = A9FCD6EE1934134E00086B86 /* Build configuration list for PBXProject "MyCrazyPet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9FCD6EA1934134E00086B86;
+			productRefGroup = A9FCD6F41934134E00086B86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9FCD6F21934134E00086B86 /* MyCrazyPet */,
+				A9FCD70D1934134E00086B86 /* MyCrazyPetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9FCD6F11934134E00086B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FCD7261934137800086B86 /* MainStoryboard.storyboard in Resources */,
+				A9FCD7011934134E00086B86 /* InfoPlist.strings in Resources */,
+				A9FCD7091934134E00086B86 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FCD70C1934134E00086B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FCD71A1934134E00086B86 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9FCD6EF1934134E00086B86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FCD7071934134E00086B86 /* EIAppDelegate.m in Sources */,
+				A9FCD7031934134E00086B86 /* main.m in Sources */,
+				A9FCD7461934294100086B86 /* SignUpViewController.m in Sources */,
+				A9FCD73D193419AD00086B86 /* ParseTableViewController.m in Sources */,
+				A9FCD7401934248600086B86 /* HomeViewController.m in Sources */,
+				A9FCD7431934292800086B86 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FCD70A1934134E00086B86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FCD71C1934134E00086B86 /* MyCrazyPetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9FCD7141934134E00086B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9FCD6F21934134E00086B86 /* MyCrazyPet */;
+			targetProxy = A9FCD7131934134E00086B86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9FCD6FF1934134E00086B86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9FCD7001934134E00086B86 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9FCD7181934134E00086B86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9FCD7191934134E00086B86 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9FCD71D1934134E00086B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A9FCD71E1934134E00086B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9FCD7201934134E00086B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCrazyPet/MyCrazyPet-Prefix.pch";
+				INFOPLIST_FILE = "MyCrazyPet/MyCrazyPet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9FCD7211934134E00086B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCrazyPet/MyCrazyPet-Prefix.pch";
+				INFOPLIST_FILE = "MyCrazyPet/MyCrazyPet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A9FCD7231934134E00086B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyCrazyPet.app/MyCrazyPet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCrazyPet/MyCrazyPet-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyCrazyPetTests/MyCrazyPetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A9FCD7241934134E00086B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyCrazyPet.app/MyCrazyPet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCrazyPet/MyCrazyPet-Prefix.pch";
+				INFOPLIST_FILE = "MyCrazyPetTests/MyCrazyPetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9FCD6EE1934134E00086B86 /* Build configuration list for PBXProject "MyCrazyPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FCD71D1934134E00086B86 /* Debug */,
+				A9FCD71E1934134E00086B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9FCD71F1934134E00086B86 /* Build configuration list for PBXNativeTarget "MyCrazyPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FCD7201934134E00086B86 /* Debug */,
+				A9FCD7211934134E00086B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9FCD7221934134E00086B86 /* Build configuration list for PBXNativeTarget "MyCrazyPetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FCD7231934134E00086B86 /* Debug */,
+				A9FCD7241934134E00086B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9FCD6EB1934134E00086B86 /* Project object */;
+}
