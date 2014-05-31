@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92DB9D71939EE3E00436F17 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DB9D61939EE3E00436F17 /* FacebookSDK.framework */; };
+		A92DB9DA1939F07E00436F17 /* ParseLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92DB9D91939F07E00436F17 /* ParseLoginViewController.m */; };
+		A92DB9DC1939F51000436F17 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DB9DB1939F51000436F17 /* Social.framework */; };
+		A9C7915919363B00007664A2 /* EIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C7915819363B00007664A2 /* EIViewController.m */; };
 		A9FCD6F71934134E00086B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD6F61934134E00086B86 /* Foundation.framework */; };
 		A9FCD6F91934134E00086B86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD6F81934134E00086B86 /* CoreGraphics.framework */; };
 		A9FCD6FB1934134E00086B86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD6FA1934134E00086B86 /* UIKit.framework */; };
@@ -47,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A92DB9D61939EE3E00436F17 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		A92DB9D81939F07E00436F17 /* ParseLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseLoginViewController.h; sourceTree = "<group>"; };
+		A92DB9D91939F07E00436F17 /* ParseLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseLoginViewController.m; sourceTree = "<group>"; };
+		A92DB9DB1939F51000436F17 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A9C7915719363B00007664A2 /* EIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIViewController.h; sourceTree = "<group>"; };
+		A9C7915819363B00007664A2 /* EIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIViewController.m; sourceTree = "<group>"; };
 		A9FCD6F31934134E00086B86 /* MyCrazyPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCrazyPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FCD6F61934134E00086B86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A9FCD6F81934134E00086B86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92DB9DC1939F51000436F17 /* Social.framework in Frameworks */,
 				A9FCD73A193416CF00086B86 /* SystemConfiguration.framework in Frameworks */,
 				A9FCD738193416C300086B86 /* StoreKit.framework in Frameworks */,
 				A9FCD736193416AD00086B86 /* Security.framework in Frameworks */,
@@ -102,6 +113,7 @@
 				A9FCD6FB1934134E00086B86 /* UIKit.framework in Frameworks */,
 				A9FCD7281934161300086B86 /* Parse.framework in Frameworks */,
 				A9FCD6F71934134E00086B86 /* Foundation.framework in Frameworks */,
+				A92DB9D71939EE3E00436F17 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +133,8 @@
 		A9FCD6EA1934134E00086B86 = {
 			isa = PBXGroup;
 			children = (
+				A9C7915719363B00007664A2 /* EIViewController.h */,
+				A9C7915819363B00007664A2 /* EIViewController.m */,
 				A9FCD6FC1934134E00086B86 /* MyCrazyPet */,
 				A9FCD7151934134E00086B86 /* MyCrazyPetTests */,
 				A9FCD6F51934134E00086B86 /* Frameworks */,
@@ -140,6 +154,8 @@
 		A9FCD6F51934134E00086B86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A92DB9DB1939F51000436F17 /* Social.framework */,
+				A92DB9D61939EE3E00436F17 /* FacebookSDK.framework */,
 				A9FCD739193416CF00086B86 /* SystemConfiguration.framework */,
 				A9FCD737193416C300086B86 /* StoreKit.framework */,
 				A9FCD735193416AD00086B86 /* Security.framework */,
@@ -163,6 +179,8 @@
 			children = (
 				A9FCD7051934134E00086B86 /* EIAppDelegate.h */,
 				A9FCD7061934134E00086B86 /* EIAppDelegate.m */,
+				A92DB9D81939F07E00436F17 /* ParseLoginViewController.h */,
+				A92DB9D91939F07E00436F17 /* ParseLoginViewController.m */,
 				A9FCD73B193419AD00086B86 /* ParseTableViewController.h */,
 				A9FCD73C193419AD00086B86 /* ParseTableViewController.m */,
 				A9FCD73E1934248600086B86 /* HomeViewController.h */,
@@ -304,9 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92DB9DA1939F07E00436F17 /* ParseLoginViewController.m in Sources */,
 				A9FCD7071934134E00086B86 /* EIAppDelegate.m in Sources */,
 				A9FCD7031934134E00086B86 /* main.m in Sources */,
 				A9FCD7461934294100086B86 /* SignUpViewController.m in Sources */,
+				A9C7915919363B00007664A2 /* EIViewController.m in Sources */,
 				A9FCD73D193419AD00086B86 /* ParseTableViewController.m in Sources */,
 				A9FCD7401934248600086B86 /* HomeViewController.m in Sources */,
 				A9FCD7431934292800086B86 /* LoginViewController.m in Sources */,
@@ -514,6 +534,7 @@
 				A9FCD7211934134E00086B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9FCD7221934134E00086B86 /* Build configuration list for PBXNativeTarget "MyCrazyPetTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +543,7 @@
 				A9FCD7241934134E00086B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

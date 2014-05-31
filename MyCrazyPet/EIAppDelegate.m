@@ -27,15 +27,23 @@
     if (![PFUser currentUser]) {
         [self presentLoginControllerAniated:YES];
     }
-                             
+    [PFFacebookUtils initializeFacebook];
+    if (![PFUser currentUser] && ![PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
+        [self presentLoginControllerAniated:NO];
+    }
     [self.window makeKeyAndVisible];
     [self presentLoginControllerAniated:YES];
     return YES;
 }
 -(void)presentLoginControllerAniated:(BOOL)animated {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    UINavigationController *logNavigationController = [storyboard instantiateViewControllerWithIdentifier: @"loginNav"];
-    [self.window.rootViewController presentViewController:logNavigationController animated:animated completion:nil];
+   // UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    //UINavigationController *logNavigationController = [storyboard instantiateViewControllerWithIdentifier: @"loginNav"];
+    //[self.window.rootViewController presentViewController:logNavigationController animated:animated completion:nil];
+    ParseLoginViewController *loginViewController = [[ParseLoginViewController alloc]init];
+    loginViewController.delegate = self;
+    [loginViewController setFields:PFLogInFieldsFacebook];
+    [self.window.rootViewController presentViewController:loginViewController animated:animated completion:nil];
+    
 }
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -54,14 +62,91 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
+
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication
+                        withSession:[PFFacebookUtils session]];
+}
 
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+}
+-(void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user
+{
+    [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError * error){
+        if (!error) {
+            // handle result
+            [self facebookRequestDidLoad:result];
+        } else {
+            [self showErrorAndLogout];
+        }
+    }];
+}
+-(void)facebookRequestDidLoad:(id)result {
+    PFUser *user= [PFUser currentUser];
+    if (user) {
+        NSString *faceBookNmae = result[@"name"];
+        user.username = faceBookNmae;
+        NSString *facebookId = result[@"id"];
+        user[@"facebookId"] = facebookId;
+        //
+        NSURL *profilePictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://graph.facebook.com/%@/picture?type=square",facebookId]];
+        NSURLRequest *profilePictureURLRequest = [NSURLRequest requestWithURL:profilePictureURL];
+        [NSURLConnection connectionWithRequest:profilePictureURLRequest delegate:self];
+                                    
+    }
+}
+-(void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error
+{
+    [self showErrorAndLogout];
+    
+}
+-(void)showErrorAndLogout {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"login failed" message:@"Please try again" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alertView show];
+    [PFUser logOut];
+}
+-(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
+    [self showErrorAndLogout];
+}
+-(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+    _profilePictureData = [[NSMutableData alloc]init];
+    
+}
+-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
+    [self.profilePictureData appendData:data];
+}
+-(void)connectionDidFinishLoading:(NSURLConnection *)connection{
+    if(self
+       .profilePictureData.length == 0 || !self.profilePictureData) {
+        [self showErrorAndLogout];
+    } else {
+        PFFile *profilePictureFile = [PFFile fileWithData:self.profilePictureData];
+        [profilePictureFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if(!succeeded) {
+                [self showErrorAndLogout];
+            } else {
+                PFUser *user = [PFUser currentUser];
+                user[@"profilePicture"] = profilePictureFile;
+                [user saveInBackgroundWithBlock:^(BOOL succeeded ,NSError *error){
+                    if(!succeeded){
+                        [self showErrorAndLogout];
+                    } else {
+                        [self.window.rootViewController dismissViewControllerAnimated:YES completion:Nil];
+                    }
+                }];
+            }
+        }];
+    }
+}
 @end

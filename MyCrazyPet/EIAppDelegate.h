@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ParseLoginViewController.h"
 
-@interface EIAppDelegate : UIResponder <UIApplicationDelegate>
+@interface EIAppDelegate : UIResponder <UIApplicationDelegate, PFLogInViewControllerDelegate, NSURLConnectionDataDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSMutableData* profilePictureData;
 
 @end
