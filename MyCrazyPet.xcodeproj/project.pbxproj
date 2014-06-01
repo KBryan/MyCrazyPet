@@ -10,6 +10,7 @@
 		A92DB9D71939EE3E00436F17 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DB9D61939EE3E00436F17 /* FacebookSDK.framework */; };
 		A92DB9DA1939F07E00436F17 /* ParseLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92DB9D91939F07E00436F17 /* ParseLoginViewController.m */; };
 		A92DB9DC1939F51000436F17 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DB9DB1939F51000436F17 /* Social.framework */; };
+		A92DB9DF193A18F500436F17 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92DB9DE193A18F500436F17 /* CameraViewController.m */; };
 		A9C7915919363B00007664A2 /* EIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C7915819363B00007664A2 /* EIViewController.m */; };
 		A9FCD6F71934134E00086B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD6F61934134E00086B86 /* Foundation.framework */; };
 		A9FCD6F91934134E00086B86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCD6F81934134E00086B86 /* CoreGraphics.framework */; };
@@ -55,6 +56,8 @@
 		A92DB9D81939F07E00436F17 /* ParseLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseLoginViewController.h; sourceTree = "<group>"; };
 		A92DB9D91939F07E00436F17 /* ParseLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseLoginViewController.m; sourceTree = "<group>"; };
 		A92DB9DB1939F51000436F17 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A92DB9DD193A18F500436F17 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		A92DB9DE193A18F500436F17 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		A9C7915719363B00007664A2 /* EIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIViewController.h; sourceTree = "<group>"; };
 		A9C7915819363B00007664A2 /* EIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIViewController.m; sourceTree = "<group>"; };
 		A9FCD6F31934134E00086B86 /* MyCrazyPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCrazyPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +136,8 @@
 		A9FCD6EA1934134E00086B86 = {
 			isa = PBXGroup;
 			children = (
+				A92DB9DD193A18F500436F17 /* CameraViewController.h */,
+				A92DB9DE193A18F500436F17 /* CameraViewController.m */,
 				A9C7915719363B00007664A2 /* EIViewController.h */,
 				A9C7915819363B00007664A2 /* EIViewController.m */,
 				A9FCD6FC1934134E00086B86 /* MyCrazyPet */,
@@ -328,6 +333,7 @@
 				A9FCD7461934294100086B86 /* SignUpViewController.m in Sources */,
 				A9C7915919363B00007664A2 /* EIViewController.m in Sources */,
 				A9FCD73D193419AD00086B86 /* ParseTableViewController.m in Sources */,
+				A92DB9DF193A18F500436F17 /* CameraViewController.m in Sources */,
 				A9FCD7401934248600086B86 /* HomeViewController.m in Sources */,
 				A9FCD7431934292800086B86 /* LoginViewController.m in Sources */,
 			);

@@ -27,7 +27,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         // This table displays items in the Todo class
-        self.parseClassName = @"TestObject";
+        self.parseClassName = @"Photo";
         self.pullToRefreshEnabled = YES;
         self.paginationEnabled = YES;
         self.objectsPerPage = 3;
@@ -60,5 +60,52 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark - PFQueryTableViewDataSource and Delegates
+- (void)objectsDidLoad:(NSError *)error {
+    [super objectsDidLoad:error];
+    
+}
+
+// return objects in a different indexpath order. in this case we return object based on the section, not row, the default is row
+- (PFObject *)objectAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+}
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForNextPageAtIndexPath:(NSIndexPath *)indexPath {
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (PFQuery *)queryForTable {
+    
+}
 
 @end
