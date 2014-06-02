@@ -68,33 +68,59 @@
 
 // return objects in a different indexpath order. in this case we return object based on the section, not row, the default is row
 - (PFObject *)objectAtIndexPath:(NSIndexPath *)indexPath {
+    return [self.objects objectAtIndex:indexPath.section];
     
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    static NSString *CellIdentifier = @"SectionHeaderCell";
+    UITableViewCell *sectionHeaderView = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    PFImageView *profileImageView = (PFImageView *) [sectionHeaderView viewWithTag:1];
+    UILabel *userNameLabel = (UILabel *)[sectionHeaderView viewWithTag:2];
+    UILabel *titleLabel = (UILabel *)[sectionHeaderView viewWithTag:3];
+    PFObject *photo = [self.objects objectAtIndex:section];
+    PFUser *user = [photo objectForKey:@"whoTook"];
+    PFFile *profilePicture = [user objectForKey:@"profilePicture"];
+    NSString *title = photo[@"title"];
+    
+    userNameLabel.text = user.username;
+    titleLabel.text = title;
+    profileImageView.file = profilePicture;
+    [profileImageView loadInBackground];
+    return  sectionHeaderView;
     
 }
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
+    NSInteger sections = self.objects.count;
+    return sections;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
     
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
+    static NSString *CellIndentifier = @"PhotoCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIndentifier];
+    PFImageView *photo = (PFImageView *)[cell viewWithTag:1];
+    photo.file = object[@"image"];
+    [photo loadInBackground];
+    return cell;
+                        
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 50.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    return 320.0f;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForNextPageAtIndexPath:(NSIndexPath *)indexPath {
 }
 
@@ -102,10 +128,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-}
+}*/
 
 - (PFQuery *)queryForTable {
-    
+    PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
+    [query includeKey:@"whoTook"];
+    [query orderByDescending:@"createdAt"];
+    return query;
 }
 
 @end
